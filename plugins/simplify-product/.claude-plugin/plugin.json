@@ -1,0 +1,13 @@
+{
+  "name": "simplify-product",
+  "description": "Simplify a feature, screen or flow by first principles — remove, automate, combine, default and defer before redesigning.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mohammed Babiker (Pascal)",
+    "url": "https://github.com/mohammedpascal"
+  },
+  "homepage": "https://github.com/mohammedpascal/pascal-skills",
+  "repository": "https://github.com/mohammedpascal/pascal-skills",
+  "license": "MIT",
+  "keywords": ["product", "ux", "design", "simplify", "review"]
+}
