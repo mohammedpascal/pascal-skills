@@ -5,6 +5,7 @@ Claude Code skills I actually use, published in case they are useful to someone 
 | Skill | What it does |
 | --- | --- |
 | [`simplify-product`](plugins/simplify-product) | Reviews a feature, screen or flow by first principles — remove, automate, combine, default and defer, and only then redesign. Starts by asking whether the screen should exist at all. |
+| [`simplify-logic`](plugins/simplify-logic) | The same for code. Finds workarounds, legacy paths, duplicate statuses and over-abstraction, asks what the code is actually for, then removes, merges and derives before it restructures anything. |
 
 ## Install
 
@@ -13,6 +14,7 @@ As a plugin, which is one command per skill and updates with the repo:
 ```
 /plugin marketplace add mohammedpascal/pascal-skills
 /plugin install simplify-product@pascal-skills
+/plugin install simplify-logic@pascal-skills
 ```
 
 Or just take the file — a skill is a single Markdown file and nothing about it needs a
@@ -41,6 +43,25 @@ underneath the UI, what to remove/automate/combine/default/defer, and only then 
 screen.
 
 It is deliberately willing to tell you the feature should not exist.
+
+## Using simplify-logic
+
+Point it at a file, a module or a concept:
+
+```
+/simplify-logic
+order status has grown to nine values and an is_cancelled flag, untangle it
+```
+
+It reads callers, data and git history, writes the minimum model (states, transitions,
+invariants), and asks you the intent questions the code can't answer — "are `done` and
+`completed` meant to differ?" — before it changes anything. Workarounds are treated as
+bugs to fix at the cause; replaced concepts are migrated and deleted, not kept behind a
+fallback.
+
+`simplify-product` simplifies what the user has to deal with; `simplify-logic` simplifies
+what the next developer has to deal with. They pair well: run product first to decide
+what should exist, then logic to make the code say only that.
 
 ## What this isn't
 

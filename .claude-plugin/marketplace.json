@@ -13,6 +13,14 @@
       "license": "MIT",
       "category": "design",
       "keywords": ["product", "ux", "design", "simplify", "review"]
+    },
+    {
+      "name": "simplify-logic",
+      "source": "./plugins/simplify-logic",
+      "description": "Simplify code logic by first principles — find workarounds, legacy paths and duplicate concepts, ask what the code is for, then remove, merge and derive.",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["code", "architecture", "refactor", "simplify", "legacy", "review"]
     }
   ]
 }

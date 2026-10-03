@@ -1,0 +1,13 @@
+{
+  "name": "simplify-logic",
+  "description": "Simplify code logic by first principles — find workarounds, legacy paths and duplicate concepts, ask what the code is for, then remove, merge and derive.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mohammed Babiker (Pascal)",
+    "url": "https://github.com/mohammedpascal"
+  },
+  "homepage": "https://github.com/mohammedpascal/pascal-skills",
+  "repository": "https://github.com/mohammedpascal/pascal-skills",
+  "license": "MIT",
+  "keywords": ["code", "architecture", "refactor", "simplify", "legacy", "review"]
+}
